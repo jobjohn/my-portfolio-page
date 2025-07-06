@@ -143,6 +143,38 @@ main {
   opacity: 0.8;
 }
 
+.social-links {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+.social-link svg {
+  width: 20px;
+  height: 20px;
+}
+
 /* Skills Section */
 .skills-section {
   padding: 100px 0;
@@ -320,6 +352,36 @@ main {
   border-radius: 10px;
 }
 
+.project-links {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e9ecef;
+}
+
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: #24292e;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.github-link:hover {
+  background: #1b1f23;
+  color: white;
+}
+
+.github-link svg {
+  width: 16px;
+  height: 16px;
+}
+
 /* Contact Section */
 .contact-section {
   padding: 100px 0;
@@ -354,6 +416,26 @@ main {
 .contact-method h4 {
   color: #3498db;
   margin-bottom: 0.5rem;
+}
+
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #3498db;
+  text-decoration: none;
+  margin-top: 0.5rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+  color: #2980b9;
+}
+
+.contact-link svg {
+  width: 20px;
+  height: 20px;
 }
 
 .contact-form h3 {
