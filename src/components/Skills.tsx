@@ -5,32 +5,32 @@ const Skills: React.FC = () => {
     {
       name: 'TypeScript',
       level: 90,
-      description: '11,000+行の経験を持つメイン言語'
+      description: '3つのプロジェクトで活用するメイン言語'
     },
     {
       name: 'JavaScript',
       level: 85,
-      description: 'モダンなES6+機能の強固な基盤'
+      description: 'ウェブ開発の基盤技術として活用'
+    },
+    {
+      name: 'HTML',
+      level: 80,
+      description: '静的サイト構築とマークアップ'
     },
     {
       name: 'CSS',
       level: 80,
-      description: '10,000+行の豊富なスタイリング経験'
+      description: 'スタイリングとレスポンシブデザイン'
     },
     {
-      name: 'HTML',
+      name: 'GitHub Pages',
       level: 85,
-      description: 'セマンティックなマークアップとアクセシビリティ'
-    },
-    {
-      name: 'React',
-      level: 80,
-      description: 'フック関数とファンクショナルコンポーネント'
+      description: '静的サイトのデプロイと公開'
     },
     {
       name: 'Git & GitHub',
-      level: 75,
-      description: 'バージョン管理とチーム開発'
+      level: 85,
+      description: 'バージョン管理とプロジェクト公開'
     }
   ];
 

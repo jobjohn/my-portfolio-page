@@ -5,24 +5,24 @@ const Home: React.FC = () => {
     <section id="home" className="home-section">
       <div className="container">
         <div className="home-content">
-          <h1 className="home-title">私のポートフォリオへようこそ</h1>
-          <p className="home-subtitle">TypeScript デベロッパー & フロントエンドエンジニア</p>
+          <h1 className="home-title">jobjohn のポートフォリオ</h1>
+          <p className="home-subtitle">TypeScript Developer & Frontend Engineer</p>
           <p className="home-description">
-            TypeScript、JavaScript、モダンなフロントエンド技術に強い情熱を持った開発者です。
-            クリーンで効率的、使いやすいアプリケーションの構築が好きです。
+            TypeScript を中心としたモダンなウェブ開発に取り組んでいる開発者です。
+            GitHub Pages を活用した静的サイト構築や、フロントエンド技術を使った実験的なプロジェクトを手がけています。
           </p>
           <div className="home-stats">
             <div className="stat">
-              <span className="stat-number">11,000+</span>
-              <span className="stat-label">行の TypeScript</span>
+              <span className="stat-number">6</span>
+              <span className="stat-label">リポジトリ</span>
             </div>
             <div className="stat">
-              <span className="stat-number">800+</span>
-              <span className="stat-label">行の JavaScript</span>
+              <span className="stat-number">4</span>
+              <span className="stat-label">技術スタック</span>
             </div>
             <div className="stat">
-              <span className="stat-number">10,000+</span>
-              <span className="stat-label">行の CSS</span>
+              <span className="stat-number">3</span>
+              <span className="stat-label">TypeScript プロジェクト</span>
             </div>
           </div>
         </div>

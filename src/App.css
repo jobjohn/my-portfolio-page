@@ -244,6 +244,21 @@ main {
   margin-bottom: 1rem;
 }
 
+.project-badges {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.github-stars {
+  background: #ffd700;
+  color: #333;
+  padding: 0.2rem 0.5rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
 .project-title {
   font-size: 1.3rem;
   color: #2c3e50;
@@ -269,6 +284,11 @@ main {
 .status-active {
   background: #cce5ff;
   color: #004085;
+}
+
+.status-experimental {
+  background: #e2e3e5;
+  color: #383d41;
 }
 
 .project-description {

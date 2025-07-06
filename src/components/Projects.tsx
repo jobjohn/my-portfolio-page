@@ -3,22 +3,46 @@ import React from 'react';
 const Projects: React.FC = () => {
   const projects = [
     {
-      title: 'ポートフォリオサイト',
-      description: 'TypeScript と React で構築した個人ポートフォリオ',
-      technologies: ['TypeScript', 'React', 'CSS', 'Vite'],
-      status: '開発中'
+      title: 'jobjohn.github.io',
+      description: 'TypeScript で構築された個人ポートフォリオサイト',
+      technologies: ['TypeScript', 'GitHub Pages'],
+      status: '公開済み',
+      github: true
     },
     {
-      title: '静的サイトプロジェクト',
-      description: 'GitHub Pages にデプロイされた複数の静的サイト',
-      technologies: ['HTML', 'CSS', 'JavaScript', 'GitHub Pages'],
-      status: '公開済み'
+      title: 'gh-next',
+      description: 'TypeScript を活用した Next.js プロジェクト',
+      technologies: ['TypeScript', 'Next.js'],
+      status: '開発中',
+      github: true
     },
     {
-      title: 'TypeScript アプリケーション',
-      description: '型安全性を活用した様々な TypeScript プロジェクト',
-      technologies: ['TypeScript', 'Node.js', 'Modern JavaScript'],
-      status: '活動中'
+      title: 'test-wiki',
+      description: 'TypeScript で実装されたウィキシステムのテスト',
+      technologies: ['TypeScript'],
+      status: '実験中',
+      github: true
+    },
+    {
+      title: 'gh-pages-test',
+      description: 'GitHub Pages のテスト用 JavaScript プロジェクト',
+      technologies: ['JavaScript', 'GitHub Pages'],
+      status: '公開済み',
+      github: true
+    },
+    {
+      title: 'aaajobjohn.github.io',
+      description: 'HTML ベースの静的サイト',
+      technologies: ['HTML', 'GitHub Pages'],
+      status: '公開済み',
+      github: true
+    },
+    {
+      title: 'my-app',
+      description: 'CSS を中心としたアプリケーション',
+      technologies: ['CSS'],
+      status: '開発中',
+      github: true
     }
   ];
 
@@ -31,9 +55,14 @@ const Projects: React.FC = () => {
             <div key={index} className="project-card">
               <div className="project-header">
                 <h3 className="project-title">{project.title}</h3>
-                <span className={`project-status status-${project.status === '開発中' ? 'in-development' : project.status === '公開済み' ? 'deployed' : 'active'}`}>
-                  {project.status}
-                </span>
+                <div className="project-badges">
+                  {project.github && project.stars && (
+                    <span className="github-stars">⭐ {project.stars}</span>
+                  )}
+                  <span className={`project-status status-${project.status === '開発中' ? 'in-development' : project.status === '公開済み' ? 'deployed' : project.status === '実験中' ? 'experimental' : 'active'}`}>
+                    {project.status}
+                  </span>
+                </div>
               </div>
               <p className="project-description">{project.description}</p>
               <div className="project-technologies">
