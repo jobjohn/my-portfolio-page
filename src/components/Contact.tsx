@@ -4,44 +4,44 @@ const Contact: React.FC = () => {
   return (
     <section id="contact" className="contact-section">
       <div className="container">
-        <h2 className="section-title">Get In Touch</h2>
+        <h2 className="section-title">お問い合わせ</h2>
         <div className="contact-content">
           <div className="contact-info">
-            <h3>Let's Connect</h3>
+            <h3>つながりましょう</h3>
             <p>
-              I'm always interested in discussing new opportunities, 
-              collaborations, or just chatting about technology.
+              新しい機会やコラボレーション、技術について話し合うことに
+              いつでも興味を持っています。
             </p>
             <div className="contact-methods">
               <div className="contact-method">
-                <h4>Email</h4>
-                <p>Feel free to reach out via email</p>
+                <h4>メール</h4>
+                <p>お気軽にメールでご連絡ください</p>
               </div>
               <div className="contact-method">
                 <h4>GitHub</h4>
-                <p>Check out my projects and contributions</p>
+                <p>私のプロジェクトとコントリビューションをご覧ください</p>
               </div>
               <div className="contact-method">
                 <h4>LinkedIn</h4>
-                <p>Connect with me professionally</p>
+                <p>プロフェッショナルなネットワークでつながりましょう</p>
               </div>
             </div>
           </div>
           <div className="contact-form">
-            <h3>Send a Message</h3>
+            <h3>メッセージを送る</h3>
             <form className="contact-form-container">
               <div className="form-group">
-                <label htmlFor="name">Name</label>
+                <label htmlFor="name">お名前</label>
                 <input 
                   type="text" 
                   id="name" 
                   name="name" 
                   required 
-                  placeholder="Your name"
+                  placeholder="お名前"
                 />
               </div>
               <div className="form-group">
-                <label htmlFor="email">Email</label>
+                <label htmlFor="email">メールアドレス</label>
                 <input 
                   type="email" 
                   id="email" 
@@ -51,17 +51,17 @@ const Contact: React.FC = () => {
                 />
               </div>
               <div className="form-group">
-                <label htmlFor="message">Message</label>
+                <label htmlFor="message">メッセージ</label>
                 <textarea 
                   id="message" 
                   name="message" 
                   rows={5} 
                   required 
-                  placeholder="Your message here..."
+                  placeholder="メッセージをここに入力してください..."
                 ></textarea>
               </div>
               <button type="submit" className="submit-btn">
-                Send Message
+                メッセージを送信
               </button>
             </form>
           </div>

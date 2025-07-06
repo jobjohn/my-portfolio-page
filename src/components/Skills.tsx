@@ -5,39 +5,39 @@ const Skills: React.FC = () => {
     {
       name: 'TypeScript',
       level: 90,
-      description: 'Primary language with 11,000+ lines of experience'
+      description: '11,000+行の経験を持つメイン言語'
     },
     {
       name: 'JavaScript',
       level: 85,
-      description: 'Strong foundation with modern ES6+ features'
+      description: 'モダンなES6+機能の強固な基盤'
     },
     {
       name: 'CSS',
       level: 80,
-      description: 'Extensive styling experience with 10,000+ lines'
+      description: '10,000+行の豊富なスタイリング経験'
     },
     {
       name: 'HTML',
       level: 85,
-      description: 'Semantic markup and accessibility best practices'
+      description: 'セマンティックなマークアップとアクセシビリティ'
     },
     {
       name: 'React',
       level: 80,
-      description: 'Modern React with hooks and functional components'
+      description: 'フック関数とファンクショナルコンポーネント'
     },
     {
       name: 'Git & GitHub',
       level: 75,
-      description: 'Version control and collaboration'
+      description: 'バージョン管理とチーム開発'
     }
   ];
 
   return (
     <section id="skills" className="skills-section">
       <div className="container">
-        <h2 className="section-title">Technical Skills</h2>
+        <h2 className="section-title">技術スキル</h2>
         <div className="skills-grid">
           {skills.map((skill, index) => (
             <div key={index} className="skill-card">

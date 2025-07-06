@@ -3,35 +3,35 @@ import React from 'react';
 const Projects: React.FC = () => {
   const projects = [
     {
-      title: 'Portfolio Website',
-      description: 'Personal portfolio built with TypeScript and React',
+      title: 'ポートフォリオサイト',
+      description: 'TypeScript と React で構築した個人ポートフォリオ',
       technologies: ['TypeScript', 'React', 'CSS', 'Vite'],
-      status: 'In Development'
+      status: '開発中'
     },
     {
-      title: 'Static Site Projects',
-      description: 'Multiple static websites deployed on GitHub Pages',
+      title: '静的サイトプロジェクト',
+      description: 'GitHub Pages にデプロイされた複数の静的サイト',
       technologies: ['HTML', 'CSS', 'JavaScript', 'GitHub Pages'],
-      status: 'Deployed'
+      status: '公開済み'
     },
     {
-      title: 'TypeScript Applications',
-      description: 'Various TypeScript projects showcasing type safety',
+      title: 'TypeScript アプリケーション',
+      description: '型安全性を活用した様々な TypeScript プロジェクト',
       technologies: ['TypeScript', 'Node.js', 'Modern JavaScript'],
-      status: 'Active'
+      status: '活動中'
     }
   ];
 
   return (
     <section id="projects" className="projects-section">
       <div className="container">
-        <h2 className="section-title">Projects</h2>
+        <h2 className="section-title">プロジェクト</h2>
         <div className="projects-grid">
           {projects.map((project, index) => (
             <div key={index} className="project-card">
               <div className="project-header">
                 <h3 className="project-title">{project.title}</h3>
-                <span className={`project-status status-${project.status.toLowerCase().replace(' ', '-')}`}>
+                <span className={`project-status status-${project.status === '開発中' ? 'in-development' : project.status === '公開済み' ? 'deployed' : 'active'}`}>
                   {project.status}
                 </span>
               </div>
@@ -45,7 +45,7 @@ const Projects: React.FC = () => {
           ))}
         </div>
         <div className="github-link">
-          <p>More projects available on my GitHub profile</p>
+          <p>その他のプロジェクトは GitHub プロフィールで確認できます</p>
         </div>
       </div>
     </section>
